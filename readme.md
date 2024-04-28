@@ -27,4 +27,4 @@ gulp
 gulp docs
 ```
 
-[Смотреть демо](https://kovalchuk-alexandr.github.io/Elegant-Store---GULP---mobile/](https://kovalchuk-alexandr.github.io/Travel-Agent-GULP-autocomplete-calendar-swiper-slider/)
+[Смотреть демо](https://kovalchuk-alexandr.github.io/Travel-Agent-GULP-autocomplete-calendar-swiper-slider/)
