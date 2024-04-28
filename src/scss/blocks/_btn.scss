@@ -1,0 +1,40 @@
+.btn-signup {
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8px 20px;
+    height: 40px;
+    border-radius: 8px;
+
+    border: 1px solid #b7b7b7;
+    /* background: #333333; */
+
+    font-family: var(--font-family);
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 1.50;
+    color: #454545;
+
+
+    transition: background-color 0.3s ease-in, color 0.3s ease-in, opacity 0.3s ease-in, transform 0.3s ease-in;
+    // transition: all 0.3s ease-in;
+    
+    
+    &:hover,
+    &:focus {
+        color: #fff;
+        background-color: #181818;
+        transform: scale(.95);
+        opacity: 0.9;
+    }
+
+    &.active {
+        color: #fff;
+        background-color: #181818;
+    }
+}
+

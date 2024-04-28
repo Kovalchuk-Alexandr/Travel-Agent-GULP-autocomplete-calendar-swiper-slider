@@ -1,0 +1,37 @@
+<div class="card-review">
+
+    <div class="card-review__rating">
+
+        @@for  (let i = 0; i < context.rating; i++) {
+            <img src="./img/svgicons/star.svg" alt="Star">
+        }
+
+        @@if (context.rating < 5) {
+            @@for (var i = 0; i < 5 - context.rating; i++) {
+                <img src="./img/svgicons/star-off.svg" alt="Star">
+            }
+        }
+
+        <!-- <img src="./img/svgicons/star.svg" alt="Star">
+        <img src="./img/svgicons/star.svg" alt="Star">
+        <img src="./img/svgicons/star.svg" alt="Star">
+        <img src="./img/svgicons/star.svg" alt="Star">
+        <img src="./img/svgicons/star-off.svg" alt="Star"> -->
+    </div>
+    
+    <p class="card-review__text">@@text</p>
+
+    <div class="card-review__author">
+
+        <div class="card-review__author-img">
+            <img src="./img/testimonials/@@img.jpg" alt="Photo">
+        </div>
+
+        <div class="card-review__author-title">
+            <h4 class="card-review__author-name">@@name</h4>
+            <p class="card-review__author-role">@@role</p>
+        </div>
+
+    </div>
+
+</div>

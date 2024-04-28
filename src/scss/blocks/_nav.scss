@@ -1,0 +1,50 @@
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 32px;
+}
+
+.nav__logo {
+	flex-shrink: 0;	// чтобы лого не сжималось
+}
+
+.nav__list {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+
+	a  {
+		font-family: var(--font-main);
+		font-weight: 450;
+		font-size: 16px;
+		line-height: 1.5;
+		color: #181818;
+
+		transition: all 0.2s ease-in;
+
+		&.active, 
+		&:hover {
+			color: var(--accent);
+		}
+	}
+
+	@include tablet {
+		display: none;
+	}
+}
+
+
+.nav__btns {
+	display: flex;
+	gap: 12px;
+
+	@include mobile {
+		display: none;
+	}
+}
+
+
+.mobile-nav-btn {
+	
+}

@@ -1,0 +1,81 @@
+.subscribe {
+    // padding: 80px 0px;
+    background-color: var(--accent);
+    color: var(--text-white);
+
+    overflow: hidden;
+}
+
+.subscribe__row {
+    position: relative;
+    padding: 80px 0px;
+    padding-left: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    @include desktop {
+        padding-left: 240px;
+    }
+
+    @include laptop {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 0;
+        padding-left: 210px;
+    }
+
+    @include mobileL {
+        padding-left: unset;
+    }
+    
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: -80px;
+        top: -20px;
+        // transform: translate(-110%);
+
+        @include desktop {
+            left: -1.5%;
+        }
+        
+        width: 237px;
+        height: 274px;
+        
+        background-image: url('./../img/subscribe/subscribe-pin-bg.svg');
+        background-repeat: no-repeat;
+
+        @include mobileL {
+            display: none;
+        }
+    }
+}
+
+.subscribe__desc {
+    display: grid;
+    gap: 4px;
+}
+
+.subscribe__title {
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.subscribe__text {
+    font-weight: 450;
+    font-size: 20px;
+    color: #f0f0f0;
+}
+
+.subscribe__form {
+    flex-grow: 1;
+    min-width: 440px;
+
+    @include mobileM {
+        min-width: unset;
+        width: 100%;
+    }
+}

@@ -1,0 +1,14 @@
+.popular__swiper {
+    width: 100%;
+    height: 100%;
+
+    .swiper-slide  {
+        // max-width: 304px  !important;
+    }
+    
+    .swiper-pagination {
+        margin-bottom: 10px !important;
+        position: static  !important;
+    }
+}
+

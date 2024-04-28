@@ -1,0 +1,128 @@
+.explore {
+    padding: 112px 0;
+
+    @include laptop {
+        padding: 50px 0;
+    }
+
+    @include tablet {
+        padding: 35px 0;
+    }
+
+    @include mobile {
+        padding: 20px 0;
+    }
+}
+
+.explore__grid {
+    display: grid;
+    // grid-template-columns: repeat(2, minmax(560px,  1fr));
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+
+    align-items: center;
+
+    @include desktop {
+        // gap: 40px;
+    }
+
+    @include laptop {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    @include tablet {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    @include mobileL {
+        gap: 18px;
+    }
+}
+
+.explore__desc {
+    display: grid;
+    gap: 24px;
+}
+
+.explore__title {
+    @include tablet {
+        text-align: center;
+    }
+}
+
+.explore__btn {
+    padding: 12px 24px;
+    width: 144px;
+    height: 48px;
+
+    background-color: var(--accent);
+    color: #fff;
+    
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 1.5;
+
+    text-wrap: nowrap;
+
+    transition: all 0.2s ease-in;
+
+    @include mobile {
+        margin: 0 auto;
+    }
+    
+    &:hover  {
+        background-color: var(--accent);
+        border: 1px  solid var(--text-muted);
+        // box-shadow: 0 0 1px 1px  gray;
+    }
+    
+}
+
+.explore__picture {
+    position: relative;
+    max-width: 560px;
+    // flex-shrink: 0;
+
+    @include tablet {
+        justify-self: center;
+    }
+
+    &-hint {
+        position: absolute;
+        top: 43px;
+        // left: 53%;
+        right: -7.3%;
+        z-index: 5;
+
+        @include mobile {
+            right: 0%;
+        }
+
+        @include mobileM {
+            display: none;
+        }
+    }
+
+    &-guide {
+        position: absolute;
+        bottom: 127px;
+        left: -32px;
+        z-index: 5;
+
+        @include mobile {
+            left: 0;
+        }
+
+        @include mobileM {
+            display: none;
+        }
+    }
+}
+
+.explore__img  {
+    border-radius: 22px;
+    overflow: hidden;
+}

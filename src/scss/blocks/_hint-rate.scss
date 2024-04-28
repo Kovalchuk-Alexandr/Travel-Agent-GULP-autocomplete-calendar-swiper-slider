@@ -1,0 +1,74 @@
+.hint-rate {
+    display: flex;
+    gap: 16px;
+
+    padding: 12px;
+    height: 79px;
+    border-radius: 12px;
+    box-shadow: 0 4px 34px 0 rgba(50, 75, 104, 0.17);
+    background: #fff;
+
+    &--discover {
+        width: 324px;
+    }
+
+    &--explore {
+        width: 300px;
+    }
+}
+
+.hint-rate__picture {
+    border-radius: 8px;
+    width: 58px;
+    height: 55px;
+    overflow: hidden;
+    flex-shrink: 0;     // чтобы не сжималась
+
+}
+
+.hint-rate__desc {
+    flex-grow: 1;
+}
+
+.hint-rate__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.50;
+}
+
+.hint-rate__rating {
+    display: flex;
+    justify-content: flex-end;
+    // align-items: center;
+    gap: 4px;
+
+    font-size: 14px;
+
+    &::before  {
+        content: "";
+        
+        width: 17px;
+        height: 16px;
+        
+        background-image: url('./../img/svgicons/star-small.svg');
+        // background-position: 20px 10px; /* x y */
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+}
+
+.hint-rate__price {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+
+    i {
+        color: var(--accent);
+        font-style: normal;
+    }
+
+}

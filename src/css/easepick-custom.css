@@ -1,0 +1,4 @@
+.calendar > .days-grid > .day.today {
+  color: var(--color-fg-accent);
+  border: 1px solid var(--color-fg-primary);
+}/*# sourceMappingURL=easepick-custom.css.map */

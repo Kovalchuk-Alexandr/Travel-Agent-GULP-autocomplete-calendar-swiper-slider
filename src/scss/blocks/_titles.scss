@@ -1,0 +1,112 @@
+.title-1 {
+	// margin: 1em 0 0.5em;
+	// position: relative;
+	font-size: 72px;
+	font-weight: 700;
+	font-family: var(--font-titles);
+
+	&--decor {
+		position: relative;
+		z-index: 1;
+	}
+
+	&--decor::after {
+		content: "";
+		
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		width: 268px;
+		height: 24px;
+		z-index: -1;
+		
+		background-image: url('./../img/discover/underline.svg');
+		background-repeat: no-repeat;
+
+		@include laptop {
+			bottom: -15%;
+			left: -3%;
+			width: 200px;
+			background-size: contain;
+		}
+
+		@include mobile {
+			bottom: -40%;
+			// left: -3%;
+			width: 120px;
+			background-size: contain;
+		}
+
+		@include mobileS {
+			bottom: -45%;
+		}
+	}
+
+	@include laptop {
+		font-size: 52px;
+	}
+
+	@include mobile {
+		text-align: center;
+		font-size: 32px;
+	}
+
+	@include mobileS {
+		font-size: 28px;
+	}
+}
+
+.text {
+	font-weight: 450;
+	font-size: 18px;
+	line-height: 1.50;
+	color: var(--text-muted);
+
+	p + p  {
+		margin-top: 1em;
+	}
+
+	@include mobile {
+		font-size: 16px;
+	}
+}
+
+.title-2 {
+	font-family: var(--font-titles);
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 1.2;
+	color: var(--text-color);
+
+	text-transform: capitalize;
+
+	@include mobile {
+		font-size: 30px;
+	}
+}
+
+.title-3 {
+	font-family: var(--font-titles);
+	font-weight: 500;
+	font-size: 36px;
+	color: var(--text-color);
+
+	@include mobileM {
+		font-size: 24px;
+	}
+}
+
+.title-4 {
+	font: {
+		family: var(--font-titles);
+		weight: 500;
+		size: 24px;
+	}
+	
+	line-height: 1.4;
+	color: var(--text-color);
+
+	&.muted  {
+		color: #9e9e9e;
+	}
+}

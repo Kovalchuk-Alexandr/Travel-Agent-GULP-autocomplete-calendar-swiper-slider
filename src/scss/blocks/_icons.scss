@@ -1,0 +1,79 @@
+.icons-wrapper {
+	padding: 30px 0;
+	display: flex;
+	column-gap: 30px;
+}
+
+.icon {
+	fill: transparent;
+	stroke: transparent;
+	width: 62px;
+	height: 62px;
+}
+
+.icon--logo {
+	height: 24px;
+	width: 122px;
+	fill: var(--accent);
+}
+
+.icon--search {
+	height: 21px;
+	width: 21px;
+	stroke: var(--page-bg);
+
+	&-btn {
+		height: 48px;
+		width: 48px;
+		fill: var(--accent);
+	}
+
+	transition: opacity 0.2s ease-in;
+	
+	&:hover {
+		cursor: pointer;
+		opacity: 0.9;
+		// stroke: var(--text-muted);
+		
+
+	}
+}
+
+.icon-btn {
+	height: 24px;
+	width: 25px;
+	fill: #B9B9B9;
+	stroke: #B9B9B9;
+
+	&:hover {
+		cursor: pointer;
+		// opacity: 0.9;
+		stroke: var(--page-bg);
+		fill: var(--page-bg);
+	}
+}
+
+
+.icon--heart-line {
+	fill: rgb(241, 68, 131);
+}
+
+.icon--id-card-line {
+	fill: rgb(51, 51, 51);
+}
+.icon--search-line {
+	fill: rgb(28, 176, 80);
+}
+
+.icon--user-star {
+	fill: rgb(26, 134, 235);
+}
+
+.icon--user {
+	stroke: rgb(26, 134, 235);
+	transition: all 0.2s ease-in;
+
+	&:hover {
+		stroke: rgb(17, 193, 90);
+	}
+}

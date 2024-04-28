@@ -1,0 +1,35 @@
+
+.hint-embark {
+    display: grid;
+    gap: 16px;
+    max-width: 224px;
+
+    padding: 12px;
+    height: 111px;
+    border-radius: 12px;
+    box-shadow: 0 4px 34px 0 rgba(50, 75, 104, 0.17);
+    background: #fff;
+}
+
+.hint-embark__picture {
+    border-radius: 8px;
+    // width: 114px;
+    height: 48px;
+    overflow: hidden;
+    flex-shrink: 0;     // чтобы не сжималась
+}
+
+.hint-discover__img {
+}
+
+.hint-discover__desc {
+    font-weight: 450;
+    font-size: 18px;
+    color: var(--text-color);
+    text-wrap: nowrap;
+
+    & .accent {
+        font-weight: 500;
+        color: var(--accent);
+    }
+}

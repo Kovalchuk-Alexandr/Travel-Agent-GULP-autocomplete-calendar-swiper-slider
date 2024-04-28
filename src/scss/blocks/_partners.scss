@@ -1,0 +1,36 @@
+.partners {
+    padding: 60px 0;
+
+    @include mobile {
+        padding: 30px 0;
+    }
+}
+
+.partners__row {
+    // position: relative;
+    // z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    @include tablet {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.partners__title {
+}
+
+.partners__content {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+
+    @include laptop {
+        gap: 20px;
+        justify-content: center;
+    }
+}

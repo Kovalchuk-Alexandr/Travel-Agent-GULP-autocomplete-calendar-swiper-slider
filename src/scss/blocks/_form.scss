@@ -1,0 +1,90 @@
+.form {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr  auto 1fr auto;
+    align-items: center;
+    padding: 12px 16px;
+    height: 72px;
+    border: 1px solid rgba(144, 144, 144, 0.3);
+    border-radius: 16px;
+
+    @include mobile {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    @include mobileS {
+        padding: 12px 8px;
+    }
+}
+
+.form__devider {
+    border: 1px solid var(--text-muted);
+    width: 24px;
+    height: 0px;
+
+    transform: rotate(90deg);
+
+    @include mobile {
+        transform: rotate(0);
+        width: 100%;
+    }
+}
+
+.form__label {
+    padding-left: 36px;
+    display: grid;
+    gap: 8px;
+
+    
+    background-position: 0px 0px; /* x y */
+    background-size: auto;
+    background-repeat: no-repeat;
+    
+    &-map {
+        background-image: url('./../img/svgicons/map.svg');
+    }
+
+    &-date  {
+        background-image: url('./../img/svgicons/calendar.svg');
+    }
+
+    span  {
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+.form__input {
+
+    font-weight: 450;
+    font-size: 14px;
+    
+    &::placeholder {
+        color: var(--text-muted);
+    }
+}
+
+.form__btn {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 10px;
+    background-color: var(--accent);
+
+    transition: all 0.2s ease-in;
+    
+    &:hover {
+        transform: scale(0.93);
+        // border: 1px  solid var(--text-muted);
+        // box-shadow: 0 0 1px 2px var(--text-muted);
+    }
+
+    @include mobile {
+        width: 100%;
+    }
+}

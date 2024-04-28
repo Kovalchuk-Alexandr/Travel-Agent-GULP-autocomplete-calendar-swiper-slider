@@ -1,0 +1,9 @@
+echo "# 2rism" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/Kovalchuk-Alexandr/Travel-Agent-GULP-autocomplete-calendar-swiper-slider.git
+git push -u origin master
+
+https://kovalchuk-alexandr.github.io/2rism/

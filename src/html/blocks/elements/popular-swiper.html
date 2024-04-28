@@ -1,0 +1,16 @@
+<!-- Slider main container -->
+<div class="swiper popular__swiper" id="swiper-popular">
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        @@loop('card-swiper.html', './data/popular.json')
+
+    </div>
+    
+    <!-- If we need scrollbar -->
+    <!-- <div class="swiper-scrollbar"></div> -->
+
+</div>
